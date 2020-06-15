@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+  <body>
+    <button id="mode" onclick="changemode()" >Dark mode</button>
+    <!-- Contact Form - sent to a Google Sheet -->
+    <form id='form' autocomplete="off" >
+      
+        <input id='name' class="txtinput" name='Name' type='text' placeholder="Username" required><br><br>
+      
+        <input id='email' class="txtinput" name='Email' type='email' placeholder="Enter your email" required><br><br>
+      
+        <input id='phone' class="txtinput" name='Phone' type='tel' placeholder="Mobile number here!" required><br><br>
+        
+        <!--Generally speaking an input field is a one-line field (probably to carry something like first name or last name, a phone number, an email).
+          A textarea is a multi-line field that allows you to press ENTER!
+          They are used for addresses or others long and complex type of data (also notes, for instance)-->
+        <textarea id='message' class="txtinput" name='message' placeholder="Providing your message will be appreciated" rows="5" cols="40" ></textarea><br><br>
+      
+        <button id="submit" type='submit'>Submit</button>
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src='google-sheet.js'></script>
+    <script src="interactive.js"></script>
+  </body>
+</html>
