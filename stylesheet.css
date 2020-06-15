@@ -1,43 +1,82 @@
 body{
     margin: 0;
     padding: 5%;
+    padding-top: 2%;
 }
 
 button{
     border-radius: 8px;
     outline: none !important;
     border: 1px solid rgba(0,0,0,0.4);
-    font-size: 150%;
 }
 
 
 .txtinput{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(243, 231, 212);
     border: 1px solid rgba(0,0,0,0.4);
-    border-radius: 5px;
-    font-size: 180%;
+    border-radius: 7px;
+    font-size: 200%;
 }
 
 .txtinput:focus, .txtinput:hover {
     outline: none !important;
-    box-shadow: 0 0 10px #718ba8;
+    box-shadow: 0 0 8px 1px #fa7f1b;
 }
 
 #submit{
-    
+    font-size: 300%;
+    color: rgba(0,0,0,0.7);
 }
 
 #submit:hover {
-    box-shadow: 0 0 10px #718ba8;
+    box-shadow: 0 0 8px 1px #fa7f1b;
 }
 #message{
     resize: none;
 }
 #mode{
     float: right;
-    background-color: black;
-    color: white;
+    font-size: 150%;
 }
 #mode:hover{
     box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+
+/*Media queries*/
+
+@media only screen and (max-width:710px){
+    .txtinput{
+        font-size: 150%;
+    }
+    textarea{
+        width: 100%;
+    }
+    #submit{
+        font-size: 250%;
+    }
+    #mode{
+        font-size: 130%;
+    }
+}
+
+@media only screen and (min-width:1050px){
+    .txtinput{
+        font-size: 250%;
+    }
+    textarea{
+        width: 70%;
+    }
+    #submit{
+        font-size: 350%;
+    }
+    #mode{
+        font-size: 230%;
+    }
+}
+
+@media only screen and (min-width:1300px){
+    textarea{
+        width: 50%;
+    }
 }
