@@ -20,7 +20,7 @@ button{
 
 .txtinput:focus, .txtinput:hover {
     outline: none !important;
-    box-shadow: 0 0 8px 1px #fa7f1b;
+    box-shadow: 0 0 8px 1px rgba(255,165,0,1);
 }
 
 #submit{
@@ -28,9 +28,8 @@ button{
     color: rgba(0,0,0,0.7);
 }
 
-#submit:hover {
-    box-shadow: 0 0 8px 1px #fa7f1b;
-}
+/*#submit:hover,#mode:hover will be in second stylesheet, implemented using js*/
+
 #message{
     resize: none;
 }
@@ -38,9 +37,8 @@ button{
     float: right;
     font-size: 150%;
 }
-#mode:hover{
-    box-shadow: 0 0 10px rgb(0, 0, 0);
-}
+
+
 
 
 /*Media queries*/
