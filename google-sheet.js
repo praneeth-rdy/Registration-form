@@ -1,9 +1,11 @@
 // Variable to hold request
 var request;
+var dataSavedTxt = document.getElementsByClassName('txt')[1];
 
 // Bind to the submit event of our form
 $("#form").submit(function(event){
 
+    dataSavedTxt.style.display = 'none';
     // Abort any pending request
     if (request) {
         request.abort();
@@ -31,6 +33,8 @@ $("#form").submit(function(event){
 
     // Callback handler that will be called on success
     request.done(function (response, textStatus, jqXHR){
+
+        dataSavedTxt.style.display = 'block';
         // Log a message to the console
         console.log("Hooray, it worked!");
         console.log(response);
