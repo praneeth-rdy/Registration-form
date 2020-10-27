@@ -5,16 +5,21 @@ body{
 }
 
 button{
-    border-radius: 8px;
+    border-radius: 5px;
     outline: none !important;
     border: 1px solid rgba(0,0,0,0.4);
 }
 
+div{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
 
 .txtinput{
     background-color: rgb(243, 231, 212);
     border: 1px solid rgba(0,0,0,0.4);
-    border-radius: 7px;
+    border-radius: 5px;
     font-size: 150%;
 }
 

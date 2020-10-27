@@ -7,6 +7,7 @@ var modebtn = document.getElementById('mode');
 var submitbtn = document.getElementById('submit');
 var body = document.getElementsByTagName('body')[0];
 var s2 = document.getElementById('onhover');
+var welcometxt = document.getElementsByClassName('txt')
 
 
 function changemode(){
@@ -30,6 +31,8 @@ function todarkmode(){
     modebtn.style.backgroundColor = 'white';
     modebtn.style.color = dmbgcolor;
     submitbtn.style.backgroundColor = 'rgba(175,238,238,0.6)';
+    welcometxt[0].style.color = 'white';
+    welcometxt[1].style.color = 'white';
     //hover properties
     s2.innerHTML = '#submit:hover{box-shadow: 0 0 8px 1px rgba(175,238,238,1);}#mode:hover{box-shadow: 0 0 8px 1px rgb(255, 255, 255);}';
 
@@ -42,6 +45,8 @@ function towhitemode(){
     modebtn.style.backgroundColor = dmbgcolor;
     modebtn.style.color = 'white';
     submitbtn.style.backgroundColor = 'rgba(235, 202, 131,0.5)';
+    welcometxt[0].style.color = 'black';
+    welcometxt[1].style.color = 'black';
     //hover properties
     s2.innerHTML = '#submit:hover{box-shadow: 0 0 8px 1px #fa7f1b;}#mode:hover{box-shadow: 0 0 8px 1px rgb(0, 0, 0);}';
 
