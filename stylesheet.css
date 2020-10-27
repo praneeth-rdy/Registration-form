@@ -15,7 +15,7 @@ button{
     background-color: rgb(243, 231, 212);
     border: 1px solid rgba(0,0,0,0.4);
     border-radius: 7px;
-    font-size: 200%;
+    font-size: 150%;
 }
 
 .txtinput:focus, .txtinput:hover {
@@ -24,7 +24,7 @@ button{
 }
 
 #submit{
-    font-size: 300%;
+    font-size: 200%;
 }
 /*submitbtn(background-color,color),modebtn(background-color,color,innerhtml),body(background-color) are implemented using js*/
 
@@ -57,19 +57,37 @@ button{
         font-size: 130%;
     }
 }
+@media only screen and (max-width:450px){
+    input{
+        width: 100%;
+    }
+    .txtinput{
+        font-size: 150%;
+    }
+    textarea{
+        width: 100%;
+    }
+    #submit{
+        font-size: 250%;
+        width: 100%;
+    }
+    #mode{
+        font-size: 130%;
+    }
+}
 
 @media only screen and (min-width:1050px){
     .txtinput{
-        font-size: 250%;
+        font-size: 200%;
     }
     textarea{
         width: 70%;
     }
     #submit{
-        font-size: 350%;
+        font-size: 200%;
     }
     #mode{
-        font-size: 230%;
+        font-size: 200%;
     }
 }
 
